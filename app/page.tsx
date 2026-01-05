@@ -64,7 +64,7 @@ const products: Product[] = [
   },
 ];
 
-export default function Home() {
+export default function Page() {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [showCheckout, setShowCheckout] = useState(false);
