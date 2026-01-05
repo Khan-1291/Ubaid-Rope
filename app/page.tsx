@@ -25,6 +25,7 @@ interface Product {
   image: string;
   description: string;
   inStock: boolean;
+  
     
 }
 
@@ -69,7 +70,7 @@ export default function Home() {
   const [showCheckout, setShowCheckout] = useState(false);
 
 const orderNow = (product: Product) => {
-  const phoneNumber = "923128057714" 
+  
 
   const message = `
 Hello, I want to order this product:
@@ -79,7 +80,7 @@ Hello, I want to order this product:
 🔗 Product Link: ${window.location.href}
   `
 
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+  const whatsappUrl = `https://wa.me/923128057714?text=${encodeURIComponent(message)}`
 
   window.open(whatsappUrl, "_blank")
 }
